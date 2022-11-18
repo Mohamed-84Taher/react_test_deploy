@@ -1,8 +1,7 @@
 import "./App.css";
-import { Route, Routes } from "react-router-dom";
+
 import Login from "./components/Login";
 import DashBoard from "./components/DashBoard";
-import NotFound from "./components/NotFound";
 
 function App() {
   return (
@@ -12,7 +11,9 @@ function App() {
         <h3>Login</h3>
         <h3>Dashboard</h3>
       </div>
-      <Routes>
+      <Login />
+      <DashBoard />
+      {/*   <Routes>
         <Route
           path="/"
           element={<Login />}
@@ -25,7 +26,7 @@ function App() {
           path="*"
           element={<NotFound />}
         />
-      </Routes>
+      </Routes> */}
     </div>
   );
 }
