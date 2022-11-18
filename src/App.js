@@ -6,20 +6,27 @@ import NotFound from "./components/NotFound";
 
 function App() {
   return (
-    <Routes>
-      <Route
-        path="/"
-        element={<Login />}
-      />
-      <Route
-        path="/dash"
-        element={<DashBoard />}
-      />
-      <Route
-        path="*"
-        element={<NotFound />}
-      />
-    </Routes>
+    <div>
+      <div>
+        <h3>Home</h3>
+        <h3>Login</h3>
+        <h3>Dashboard</h3>
+      </div>
+      <Routes>
+        <Route
+          path="/"
+          element={<Login />}
+        />
+        <Route
+          path="/dash"
+          element={<DashBoard />}
+        />
+        <Route
+          path="*"
+          element={<NotFound />}
+        />
+      </Routes>
+    </div>
   );
 }
 
